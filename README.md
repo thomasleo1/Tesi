@@ -114,25 +114,12 @@ python app.py
 
 ---
 
-## 📄 License
+## 👨‍💻 Author
 
-This project is licensed under the **MIT License**.
-
----
-
-## 👤 Author
-
-**Thomas Leo** - Undergraduate in Information Engineering (*University of Salento*)  
-**Advisor:** Prof. Luigi Patrono
-
----
-
-### 💡 Additional Recommendations to Improve the Repository:
-1. **File Reorganization:** Keep file and folder names consistent with the structure defined in `README.md`.
-2. **`.gitignore` File:** Add a `.gitignore` file to prevent committing temporary files or build directories (`__pycache__/`, `.idea/`, `.gradle/`, `build/`, etc.).
-
-### 💡 Consigli aggiuntivi per migliorare la repository:
-1. **Riorganizzazione dei file:** Se la cartella contiene codice sorgente (es. script Python, progetto Android Studio, ecc.), assegna loro nomi coerenti con la struttura descritta nel `README.md`.
-2. **File `.gitignore`:** Aggiungi un file `.gitignore` per evitare di caricare file temporanei o cartelle di build (`__pycache__/`, `.idea/`, `.gradle/`, ecc.).            # Progetto Android Studio per lo smartwatch
-    ├── app/src/main/java/    # Codice sorgente Java (MainActivity, BluetoothService)
-    └── AndroidManifest.xml   # Permessi Bluetooth e configurazione servizi
+* **Thomas Leo**
+  * **GitHub:** [@thomasleo1](https://github.com/thomasleo1)
+  * **Academic Email:** [thomas.leo@studenti.unisalento.it](mailto:thomas.leo@studenti.unisalento.it)
+  * **Personal Email:** [thomasleo2704@gmail.com](mailto:thomasleo2704@gmail.com)
+  * **University:** Università del Salento
+  * **Degree Program:** Information Engineering (*Ingegneria dell'Informazione*)
+  * **Course:** Software Engineering Principles (*Principi di Ingegneria del Software*)
