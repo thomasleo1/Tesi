@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Page</title>
+
+    <!-- Decora l'interfaccia della schermata -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            overflow-x: auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #228B22;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .warning-cell {
+            background-color: yellow;
+            color: black;
+        }
+
+        .pericolo-cell {
+            background-color: red;
+            color: black;
+        }
+
+        .scrollable {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .logout-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notifiche ricevute</h1>
+    <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+    <div class="scrollable">
+
+        <!--Crea la tabella dei dati e la riempie -->
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Indirizzo MAC</th>
+                <th>Distanza (m)</th>
+                <th>Ora</th>
+                <th>Data</th>
+                <th>Stato</th>
+            </tr>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.mac_address }}</td>
+                    <td>{{ item.distance }}</td>
+                    <td>{{ item.time.strftime('%H:%M:%S') }}</td>
+                    <td>{{ item.time.strftime('%d/%m/%Y') }}</td>
+                    {% if item.stato.lower() == 'warning' %}
+                        <td class="warning-cell">{{ item.stato }}</td>
+                    {% elif item.stato.lower() == 'pericolo' %}
+                        <td class="pericolo-cell">{{ item.stato }}</td>
+                    {% else %}
+                        <td>{{ item.stato }}</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+</body>
+</html>
