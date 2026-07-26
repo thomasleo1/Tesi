@@ -7,7 +7,20 @@
 This project was developed as a Bachelor's Degree Thesis in **Computer Networks** at the **University of Salento** (A.Y. 2023-2024).  
 The primary goal is to develop an **Internet of Things (IoT)** system aimed at collision prevention and increasing operator safety in outdoor work environments involving remotely controlled vehicles or heavy construction machinery.
 
----
+## 📸 Screenshots & Preview
+
+<table>
+  <tr>
+    <td align="center" width="30%">
+      <b>Wear OS App</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/3df40c05-1850-4639-a59f-6bbe1e848770" width="100%" alt="Wear OS App" />
+    </td>
+    <td align="center" width="70%">
+      <b>Server Dashboard</b><br/><br/>
+      <img src="https://github.com/user-attachments/assets/1b493784-47ab-46e4-8291-7b92585fb39a" width="100%" alt="Server Dashboard" />
+    </td>
+  </tr>
+</table>
 
 ## 📌 System Architecture
 
