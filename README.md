@@ -47,21 +47,6 @@ The overall system is divided into three main modules that communicate with each
 
 ---
 
-## 📁 Repository Structure
-
-```text
-├── raspberry/
-│   └── scan_and_notify.py    # Python script for BLE scanning, distance estimation, and alert/data transmission
-├── server/
-│   ├── app.py                # Flask Web Server and SQLAlchemy Database management
-│   └── templates/            # HTML Templates (login.html, data.html)
-└── wear_os_app/              # Android Studio Project for the smartwatch
-    ├── app/src/main/java/    # Java source code (MainActivity, BluetoothService)
-    └── AndroidManifest.xml   # Bluetooth permissions and service configuration
-```
-
----
-
 ## 🚀 Installation & Setup Guide
 
 ### 1. Web Server Configuration
@@ -75,7 +60,7 @@ pip install flask flask-sqlalchemy
 Start the web server:
 
 ```bash
-python app.py
+python server.py
 ```
 
 > **Note:** By default, the server listens on port `5000`.
@@ -84,7 +69,7 @@ python app.py
 
 ### 2. Wear OS App Setup
 
-1. Open the `wear_os_app` folder in **Android Studio**.
+1. Open the `Wear Os` folder in **Android Studio**.
 2. Verify that `AndroidManifest.xml` includes the necessary Bluetooth permissions:
    - `BLUETOOTH_CONNECT`
    - `BLUETOOTH_SCAN`
@@ -109,7 +94,7 @@ python app.py
    - Web Server IP address
 4. Run the script with root privileges (required for direct access to Bluetooth sockets):
    ```bash
-   sudo python scan_and_notify.py
+   sudo python client.py
    ```
 
 ---
