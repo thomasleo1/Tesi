@@ -120,4 +120,4 @@ python server.py
   * **Personal Email:** [thomasleo2704@gmail.com](mailto:thomasleo2704@gmail.com)
   * **University:** Università del Salento
   * **Degree Program:** Information Engineering (*Ingegneria dell'Informazione*)
-  * **Course:** Software Engineering Principles (*Principi di Ingegneria del Software*)
+  * **Course:** Computer Networks (*Reti di calcolatori*)
