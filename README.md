@@ -7,7 +7,7 @@
 This project was developed as a Bachelor's Degree Thesis in **Computer Networks** at the **University of Salento** (A.Y. 2023-2024).  
 The primary goal is to develop an **Internet of Things (IoT)** system aimed at collision prevention and increasing operator safety in outdoor work environments involving remotely controlled vehicles or heavy construction machinery.
 
-## 📸 Screenshots & Preview
+## Screenshots & Preview
 
 <table>
   <tr>
@@ -22,7 +22,7 @@ The primary goal is to develop an **Internet of Things (IoT)** system aimed at c
   </tr>
 </table>
 
-## 📌 System Architecture
+## System Architecture
 
 The overall system is divided into three main modules that communicate with each other:
 
@@ -42,7 +42,7 @@ The overall system is divided into three main modules that communicate with each
 
 ---
 
-## 🛠️ Technologies and Hardware Used
+## Technologies and Hardware Used
 
 ### Hardware
 * **Raspberry Pi 4**
@@ -60,7 +60,7 @@ The overall system is divided into three main modules that communicate with each
 
 ---
 
-## 🚀 Installation & Setup Guide
+## Installation & Setup Guide
 
 ### 1. Web Server Configuration
 
@@ -112,7 +112,7 @@ python server.py
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 * **Thomas Leo**
   * **GitHub:** [@thomasleo1](https://github.com/thomasleo1)
